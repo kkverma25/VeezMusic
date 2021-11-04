@@ -53,35 +53,35 @@ async def _human_time_duration(seconds):
 async def start_private(client: Client, message: Message):
     await message.reply_text(
         f"""✨ **Welcome {message.from_user.mention()} !**\n
-💭 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) allows you to play music on groups through the new Telegram's voice chats!**
+💭 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) ᴀʟʟᴏᴡᴤ ʏᴏᴜ ᴛᴏ ᴘʟᴀʏ ᴍᴜᴤɪᴄ ᴏɴ ɢʀᴏᴜᴘᴤ ᴛʜʀᴏᴜɢʜ ᴛʜᴇ ɴᴇᴡ ᴛᴇʟᴇɢʀᴀᴍ'ᴤ ᴠᴏɪᴄᴇ ᴄʜᴀᴛᴤ!!**
 
-💡 **Find out all the Bot's commands and how they work by clicking on the » 📚 Commands button!**
+💡 ** Ḟïṅḋ öüẗ äḷḷ ẗḧë Ḅöẗ'ṡċöṁṁäṅḋṡ äṅḋ ḧöẅ ẗḧëÿ ẅöṛḳ ḅÿ ċḷïċḳïṅġ öṅ ẗḧë » 📚 Commands button!**
 
-🔖 **To know how to use this bot, please click on the » ❓ Basic Guide button!**""",
+🔖 **𝐓𝐨 𝐤𝐧𝐨𝐰𝐡𝐨𝐰 𝐭𝐨 𝐮𝐬𝐞 𝐭𝐡𝐢𝐬 𝐛𝐨𝐭, 𝐩𝐥𝐞𝐚𝐬𝐞 𝐜𝐥𝐢𝐜𝐤 𝐨𝐧 𝐭𝐡𝐞❓ 𝐁𝐚𝐬𝐢𝐜 𝐆𝐮𝐢𝐝𝐞 𝐛𝐮𝐭𝐭𝐨𝐧  » !**"""
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to your Group ➕",
+                        "➕ 𝐀𝐃𝐃 𝐌𝐄 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕",
                         url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                     )
                 ],
                 [InlineKeyboardButton("❓ Basic Guide", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("📚 Commands", callback_data="cbcmds"),
-                    InlineKeyboardButton("❤️ Donate", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("📚 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒", callback_data="cbcmds"),
+                    InlineKeyboardButton("𝐎𝐖𝐍𝐄𝐑", url=f"https://t.me/YOUR_DEVIL_DAD"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 Official Group", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "👥 𝐎𝐟𝐟𝐢𝐜𝐢𝐚𝐥 𝐆𝐫𝐨𝐮𝐩", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "📣 Official Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "📣 𝐎𝐟𝐟𝐢𝐢𝐚𝐥 𝐂𝐡𝐚𝐧𝐧𝐞𝐥", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌐 Source Code", url="https://github.com/levina-lab/VeezMusic"
+                        "🌐𝐒𝐎𝐔𝐑𝐂𝐄 𝐂𝐎𝐃𝐄", url="https://github.com/kkverma25/VeezMusic"
                     )
                 ],
             ]
@@ -101,15 +101,15 @@ async def start_group(client: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("✨ Group", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("𝐆𝐑𝐎𝐔𝐏", url=f"https://t.me/{GROUP_SUPPORT}"),
                 InlineKeyboardButton(
-                    "📣 Channel", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "𝐂𝐇𝐀𝐍𝐍𝐋𝐄", url=f"https://t.me/{UPDATES_CHANNEL}"
                 ),
             ]
         ]
     )
 
-    alive = f"**Hello {message.from_user.mention()}, i'm {BOT_NAME}**\n\n✨ Bot is working normally\n🍀 My Master: [{ALIVE_NAME}](https://t.me/{OWNER_NAME})\n✨ Bot Version: `v{__version__}`\n🍀 Pyrogram Version: `{pyrover}`\n✨ Python Version: `{__python_version__}`\n🍀 Uptime Status: `{uptime}`\n\n**Thanks for Adding me here, for playing music on your Group voice chat** ❤"
+    alive = f"**Hello {message.from_user.mention()}, i'm {BOT_NAME}**\n\n✨ Bot is working normally\n🍀 My Master: [{ALIVE_NAME}](https://t.me/your_devil_dad)\n✨ Bot Version: `v{__version__}`\n🍀 Pyrogram Version: `{pyrover}`\n✨ Python Version: `{__python_version__}`\n🍀 Uptime Status: `{uptime}`\n\n**Thanks for Adding me here, for playing music on your Group voice chat** ❤"
 
     await message.reply_photo(
         photo=f"{ALIVE_IMG}",
