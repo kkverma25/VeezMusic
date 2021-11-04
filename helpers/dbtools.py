@@ -36,7 +36,7 @@ async def handle_user_status(bot, cmd):
             await db.remove_ban(chat_id)
         else:
             await cmd.reply_text(
-                f"sorry, you're banned, ask in @{GROUP_SUPPORT} if you think this was an mistake.",
+                f"sorry, you're banned, ask in @DEVIL_DAD_SUPPORT if you think this was an mistake.",
                 quote=True,
             )
             return
