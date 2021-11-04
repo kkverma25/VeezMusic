@@ -18,11 +18,9 @@ from config import (
 async def cbstart(_, query: CallbackQuery):
     await query.edit_message_text(
         f"""✨ **Welcome [{query.message.chat.first_name}](tg://user?id={query.message.chat.id}) !**\n
-💭 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) allows you to play music on groups through the new Telegram's voice chats!**
-
-💡 **Find out all the Bot's commands and how they work by clicking on the » 📚 Commands button!**
-
-🔖 **To know how to use this bot, please click on the » ❓ Basic Guide button!**""",
+💭 **[{BOT_NAME}](https://t.me/{BOT_USERNAME}) ᴀʟʟᴏᴡᴤ ʏᴏᴜ ᴛᴏ ᴘʟᴀʏ ᴍᴜᴤɪᴄ ᴏɴ ɢʀᴏᴜᴘᴤ ᴛʜʀᴏᴜɢʜ ᴛʜᴇ ɴᴇᴡ ᴛᴇʟᴇɢʀᴀᴍ'ᴤ ᴠᴏɪᴄᴇ ᴄʜᴀᴛᴤ!**
+💡 **Ḟïṅḋ öüẗ äḷḷ ẗḧë Ḅöẗ'ṡċöṁṁäṅḋṡ äṅḋ ḧöẅ ẗḧëÿ ẅöṛḳ ḅÿ ċḷïċḳïṅġ öṅ ẗḧë**
+🔖 **𝐓𝐨 𝐤𝐧𝐨𝐰𝐡𝐨𝐰 𝐭𝐨 𝐮𝐬𝐞 𝐭𝐡𝐢𝐬 𝐛𝐨𝐭, 𝐩𝐥𝐞𝐚𝐬𝐞 𝐜𝐥𝐢𝐜𝐤 𝐨𝐧 𝐭𝐡𝐞❓ 𝐁𝐚𝐬𝐢𝐜 𝐆𝐮𝐢𝐝𝐞 𝐛𝐮𝐭𝐭𝐨𝐧!**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -46,7 +44,7 @@ async def cbstart(_, query: CallbackQuery):
                 ],
                 [
                     InlineKeyboardButton(
-                        "🌐 𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞", url="https://github.com/levina-lab/VeezMusic"
+                        "🌐 𝐒𝐨𝐮𝐫𝐜𝐞 𝐂𝐨𝐝𝐞", url="https://github.com/kkverma25/VeezMusic"
                     )
                 ],
             ]
