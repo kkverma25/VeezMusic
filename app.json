@@ -52,13 +52,13 @@
         "OWNER_NAME": {
             "description": "fill with your telegram username without @",
             "required": false,
-            "value": "YOUR_DEIL_DaD"
+            "value": "YOUR_DEVIL_DaD"
 
         },
         "ALIVE_NAME": {
             "description": "fill with the nickname of your telegram account",
             "required": false,
-            "value": "Levina"
+            "value": "DEVIL"
         },
         "API_ID": {
             "description": "your Api ID from my.telegram.org/apps",
